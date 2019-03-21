@@ -31,6 +31,7 @@ public class Main2Activity extends AppCompatActivity {
         btnConfirmar = findViewById(R.id.btnConfirmar);
         btnCancelar = findViewById(R.id.btnCancelar);
 
+        //obtengo el intent y verifico que tenga datos
         Bundle data = getIntent().getExtras();
         if (data!=null){
             obtenerIntent(data);
@@ -40,8 +41,8 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent regresar = new Intent(getApplicationContext(),MainActivity.class);
                 //startActivity(regresar);
-                setResult(RESULT_OK,regresar);
-                finish();
+                setResult(RESULT_OK,regresar);//con esto le digo a la actividad 1 que la accion se realizo con exito
+                finish();// cierra esta actividad y lo envia a la actividad que abrio esta
             }
         });
 
@@ -49,12 +50,12 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent regresar = new Intent(getApplicationContext(),MainActivity.class);
-                setResult(RESULT_CANCELED,regresar);
-                finish();
+                setResult(RESULT_CANCELED,regresar);//con esto le digo a la actividad 1 que el usuario cancelo la accion
+                finish();// cierra esta actividad y lo envia a la actividad que abrio esta
             }
         });
     }
-
+//metodo para obtener un intent
     public void obtenerIntent(Bundle data){
         int codigo=0;
         codigo +=1;
