@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="450dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar" />
+
+        <TextView
+            android:id="@+id/tvcodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="codigo" />
+
+        <TextView
+            android:id="@+id/tvnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nombre" />
+
+        <TextView
+            android:id="@+id/tvdescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="descripcion" />
+
+        <TextView
+            android:id="@+id/tvprecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="precio" />
+
+        <TextView
+            android:id="@+id/tvcategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="categoria" />
+
+        <TextView
+            android:id="@+id/tvprecioventa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio Venta" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="confirmar" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cancelar" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
